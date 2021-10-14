@@ -63,5 +63,6 @@ input.addEventListener('keyup', (e) => {
 document.querySelector('aside').addEventListener('click',()=>{
     let warrior = `https://garrongarron.github.io/rpg-test-3/`
     let udemy = `https://www.udemy.com/course/threejs-basico-en-espanol/`
-    window.open(warrior, '_blank').focus();
+    let game = 'https://garrongarron.github.io/rpg-marketing/index.html'
+    window.open(game, '_blank').focus();
 })
