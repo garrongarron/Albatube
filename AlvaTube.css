@@ -1,0 +1,177 @@
+:root {
+    --main-bg-color: hsl(0, 0%, 18.82%);
+    --general-bg-color: rgb(59, 59, 59);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+    background-color: var(--general-bg-color);
+}
+
+header {
+    height: 56px;
+    background-color: var(--main-bg-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 20px;
+}
+
+header ul li {
+    height: 56px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li input {
+    height: 30px;
+    width: 200px;
+    border: 1px solid gray;
+    background-color: var(--main-bg-color);
+    color: white;
+    outline: none;
+    padding-left: 5px;
+}
+
+header ul li button {
+    height: 30px;
+    background-color: rgb(97, 97, 97);
+    border: 1px solid gray;
+    color: white;
+    border-left: none;
+}
+
+header ul li.buttons {
+    /* background-color: red; */
+}
+
+header ul li.buttons ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li.buttons ul li {
+    width: 30px;
+    height: 30px;
+    /* background-color: yellow; */
+    margin: auto 10px;
+}
+header h1{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+div.container {
+    display: flex;
+}
+
+div.container div.left {
+    /* background-color: red; */
+    margin-top: 56px;
+    min-height: 100vh;
+    width: 100%;
+    padding-left: 20px;
+}
+
+div.video {
+    width: 100%;
+    margin-top: 10px;
+}
+
+div.container div.right {
+    /* background-color: blue; */
+    margin-top: 56px;
+    min-height: 100vh;
+    width: 25%;
+    min-width: 400px;
+    padding-right: 20px;
+}
+
+div.container div.right>div {
+    /* height: 50px; */
+    padding: 10px;
+    display: flex;
+}
+
+div.container div.right>div img {
+    min-width: 168px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+div.container div.right>div>div {
+    padding: 0 10px;
+}
+
+div.container div.right>div>div a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+/*ASIDE*/
+
+aside {
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+    background-image: radial-gradient(orange, red);
+}
+
+div.video {
+    position: relative;
+}
+
+div.video>div {
+    /* position: absolute; */
+    bottom: 0;
+    background-color: rgb(65, 65, 65);
+}
+
+.description {
+    font-size: 1.5em;
+    margin: 10px auto;
+}
+
+.twitters {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+aside{
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    background-image: url(img/TheWarrior-tujuegoajuicio.PNG);/*img/Trhree-js-basico.png*/
+    background-size: contain;
+    color: chartreuse;
+    text-shadow: 0px 0px 4px white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+}
